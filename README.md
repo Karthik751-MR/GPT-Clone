@@ -1,46 +1,64 @@
-﻿<div align="center">
+# GPT-Clone
 
-# ðŸ’¬ GPT-Clone (Full-Stack Conversational AI)
+> A full-stack conversational AI interface inspired by modern chat assistants.
 
-A complete ChatGPT replica featuring real-time AI streaming responses, session management, Markdown syntax highlighting, dark mode aesthetics, and OpenAI / Gemini API integration.
+GPT-Clone provides a chat experience with conversation history, streamed AI responses, Markdown/code rendering, and configurable AI API integration.
 
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/Express-4.x-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+## Features
 
-</div>
+- Streaming AI responses
+- Multi-conversation history
+- Markdown and syntax-highlighted code rendering
+- Copyable code blocks
+- Responsive chat interface
+- AI provider integration
 
----
+## Tech Stack
 
-## âœ¨ Features
+- React
+- Node.js
+- Express
+- Tailwind CSS
+- AI APIs (OpenAI/Gemini depending on configuration)
 
-- âš¡ **Token-by-Token Response Streaming**: Smooth typing effect matching ChatGPT's response cadence.
-- ðŸ“ **Rich Markdown & Code Rendering**: Automatic code syntax highlighting with one-click copy buttons.
-- ðŸ—‚ï¸ **Multi-Chat History Management**: Create, rename, switch, and delete conversation threads.
-- ðŸŽ¨ **Pixel-Perfect ChatGPT Interface**: Faithful recreation of OpenAI's clean sidebar, prompt box, and avatars.
+## Project Structure
 
----
+```text
+GPT-Clone/
+├── chatgpt-clone/
+│   ├── backend/        # API and AI integration
+│   └── client/         # React frontend
+├── .gitignore
+└── README.md
+```
 
-## ðŸš€ Quick Start
+## Getting Started
 
-### 1. Setup Backend
-`ash
+### Backend
+
+```bash
 cd chatgpt-clone/backend
 npm install
-# Set OPENAI_API_KEY in .env
-npm start
-`
+```
 
-### 2. Setup Client
-`ash
+Create the required `.env` configuration for your selected AI provider, then start the server:
+
+```bash
+npm start
+```
+
+### Frontend
+
+```bash
 cd ../client
 npm install
 npm run dev
-`
+```
 
----
+## Security
 
-## ðŸ‘¤ Author
+Keep API keys in environment variables and never commit `.env` files or provider credentials.
 
-- **Karthik** - [@Karthik751-MR](https://github.com/Karthik751-MR)
+## Author
+
+**Karthik Raj M R** — [@Karthik751-MR](https://github.com/Karthik751-MR)
